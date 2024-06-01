@@ -24,6 +24,16 @@ header {
   margin-bottom: 0.5em;
 }
 
+input {
+  padding: 1em;
+  font-size: large;
+}
+
+.input-button {
+  margin: 0 0.25em 0 0.25em;
+  padding: 0.2em;
+}
+
 table {
   border: 2px dashed black;
   padding: 1em;
