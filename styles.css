@@ -9,43 +9,94 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 15em;
+  margin-top: 5em; /* Adjusted for better initial view */
+  font-family: Arial, sans-serif; /* Added a font for better readability */
+  background-color: #f4f4f9; /* Added a light background color */
+  color: #333; /* Changed text color for better contrast */
 }
 
 header {
-  font-weight: 400;
+  font-weight: 700; /* Increased weight for better emphasis */
   font-size: 2.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em; /* Increased margin for better spacing */
+  color: #4a90e2; /* Added a color for the header */
 }
 
 #input-container {
-  border: 2px solid black;
+  border: 2px solid #4a90e2; /* Matched border color with header */
   padding: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em; /* Increased margin for better spacing */
+  border-radius: 8px; /* Added border radius for rounded corners */
+  background-color: #fff; /* Added a background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
 }
 
 input {
-  padding: 1em;
+  padding: 0.75em; /* Adjusted padding for better spacing */
   font-size: large;
+  border: 1px solid #ccc; /* Added border for inputs */
+  border-radius: 4px; /* Added border radius for inputs */
+  margin-bottom: 0.5em; /* Added margin for better spacing */
+  width: 100%; /* Full width inputs */
 }
 
 .input-button {
-  margin: 0 0.25em 0 0.25em;
-  padding: 0.2em;
+  margin: 0 0.5em;
+  padding: 0.5em 1em; /* Adjusted padding for buttons */
+  border: none; /* Removed default border */
+  border-radius: 4px; /* Added border radius for buttons */
+  background-color: #4a90e2; /* Added background color */
+  color: #fff; /* Changed text color to white */
+  cursor: pointer; /* Changed cursor to pointer */
+  transition: background-color 0.3s ease; /* Added transition for hover effect */
+}
+
+.input-button:hover {
+  background-color: #357ab8; /* Darkened background color on hover */
 }
 
 table {
-  border: 2px dashed black;
-  padding: 1em;
+  border-collapse: collapse; /* Collapsed borders for table */
+  width: 35em; /* Fixed width table */
+  max-width: 100%; /* Set max-width for responsiveness */
+  margin: 1em 0; /* Added margin for better spacing */
+  background-color: #fff; /* Added background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+  border-radius: 8px; /* Added border radius */
+  overflow: hidden; /* Hide overflow for border radius */
 }
 
-.expense-table th:first-child,
-.expense-table td:first-child {
-  padding-right: 8em;
-  padding-left: 2em;
+th,
+td {
+  padding: 1em; /* Unified padding for cells */
+  text-align: left; /* Aligned text to the left */
+  border-bottom: 1px solid #ccc; /* Added bottom border for cells */
 }
 
-.expense-table th,
-.expense-table td {
-  padding-right: 6em;
+th {
+  background-color: #4a90e2; /* Added background color for headers */
+  color: #fff; /* Changed text color to white */
+}
+
+td {
+  background-color: #f9f9f9; /* Added alternating row color */
+}
+
+tr:nth-child(even) td {
+  background-color: #e9e9e9; /* Added alternating row color */
+}
+
+.remove-btn {
+  padding: 0.5em 1em; /* Added padding */
+  border: 2px solid #e74c3c; /* Solid red border */
+  background-color: #e74c3c; /* Red background */
+  color: #fff; /* White text color */
+  border-radius: 4px; /* Border radius for rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition for smooth hover effect */
+}
+
+.remove-btn:hover {
+  background-color: #c0392b; /* Darkened background color on hover */
+  border-color: #c0392b; /* Darkened border color on hover */
 }
