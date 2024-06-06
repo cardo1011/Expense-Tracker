@@ -19,18 +19,20 @@
         name="dollar-amount"
         id="dollar-amount"
         min="0"
-        pattern="^\d*(\.\d{0,2})?$"
-        placeholder="how much was it?"
+        placeholder="0.00"
       />
       <button class="input-button" id="add">Add</button>
       <button class="input-button" id="reset">Reset</button>
     </div>
     <div class="expense-table">
-      <table>
+      <table id="expense-table">
         <tr>
-          <th>Expense</th>
-          <th>Date</th>
-          <th>$ Amount</th>
+          <thead>
+            <th>Expense</th>
+            <th>Date</th>
+            <th>$ Amount</th>
+          </thead>
+          <tbody></tbody>
         </tr>
       </table>
     </div>
